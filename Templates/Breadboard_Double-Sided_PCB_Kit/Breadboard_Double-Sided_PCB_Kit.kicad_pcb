@@ -1,0 +1,3802 @@
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-1")
+
+  (general
+    (thickness 1.6)
+    (drawings 10)
+    (tracks 0)
+    (zones 0)
+    (modules 276)
+    (nets 1)
+  )
+
+  (page A4)
+  (layers
+    (0 F.Cu signal)
+    (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
+    (38 B.Mask user)
+    (39 F.Mask user)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
+    (44 Edge.Cuts user)
+    (45 Margin user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
+    (48 B.Fab user)
+    (49 F.Fab user)
+  )
+
+  (setup
+    (last_trace_width 0.25)
+    (trace_clearance 0.2)
+    (zone_clearance 0.508)
+    (zone_45_only no)
+    (trace_min 0.2)
+    (via_size 0.8)
+    (via_drill 0.4)
+    (via_min_size 0.4)
+    (via_min_drill 0.3)
+    (uvia_size 0.3)
+    (uvia_drill 0.1)
+    (uvias_allowed no)
+    (uvia_min_size 0.2)
+    (uvia_min_drill 0.1)
+    (edge_width 0.1)
+    (segment_width 0.2)
+    (pcb_text_width 0.3)
+    (pcb_text_size 1.5 1.5)
+    (mod_edge_width 0.15)
+    (mod_text_size 1 1)
+    (mod_text_width 0.15)
+    (pad_size 1.524 1.524)
+    (pad_drill 0.762)
+    (pad_to_mask_clearance 0)
+    (aux_axis_origin 0 0)
+    (visible_elements 7FFFFF7F)
+    (pcbplotparams
+      (layerselection 0x010fc_ffffffff)
+      (usegerberextensions false)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
+      (excludeedgelayer true)
+      (linewidth 0.100000)
+      (plotframeref false)
+      (viasonmask false)
+      (mode 1)
+      (useauxorigin false)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (psnegative false)
+      (psa4output false)
+      (plotreference true)
+      (plotvalue true)
+      (plotinvisibletext false)
+      (padsonsilk false)
+      (subtractmaskfromsilk false)
+      (outputformat 1)
+      (mirror false)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory ""))
+  )
+
+  (net 0 "")
+
+  (net_class Default "This is the default net class."
+    (clearance 0.2)
+    (trace_width 0.25)
+    (via_dia 0.8)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
+  )
+
+  (module MountingHole:MountingHole_2.2mm_M2_ISO14580 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5CD5B9BE)
+    (at 24.19 26.17)
+    (descr "Mounting Hole 2.2mm, no annular, M2, ISO14580")
+    (tags "mounting hole 2.2mm no annular m2 iso14580")
+    (attr virtual)
+    (fp_text reference REF** (at 0 -2.9) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_2.2mm_M2_ISO14580 (at 0 2.9) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.9 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 2.15 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B9BA)
+    (at 24.13 33.02)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B9B6)
+    (at 24.13 40.64)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B9B2)
+    (at 24.13 43.18)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B9AE)
+    (at 90.17 33.02)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B9AA)
+    (at 24.13 38.1)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B9A6)
+    (at 24.13 30.48)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module MountingHole:MountingHole_2.2mm_M2_ISO14580 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5CD5B99F)
+    (at 90.19 52.17)
+    (descr "Mounting Hole 2.2mm, no annular, M2, ISO14580")
+    (tags "mounting hole 2.2mm no annular m2 iso14580")
+    (attr virtual)
+    (fp_text reference REF** (at 0 -2.9) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_2.2mm_M2_ISO14580 (at 0 2.9) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.9 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 2.15 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B99B)
+    (at 90.17 40.64)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B997)
+    (at 90.17 45.72)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B993)
+    (at 24.13 38.1)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B98F)
+    (at 24.13 43.18)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B98B)
+    (at 24.13 45.72)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B987)
+    (at 24.13 35.56)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B983)
+    (at 90.17 48.26)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B97F)
+    (at 24.13 30.48)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B97B)
+    (at 90.17 35.56)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B977)
+    (at 90.17 38.1)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B973)
+    (at 24.13 33.02)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B96F)
+    (at 90.17 43.18)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module MountingHole:MountingHole_2.2mm_M2_ISO14580 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5CD5B968)
+    (at 24.19 52.17)
+    (descr "Mounting Hole 2.2mm, no annular, M2, ISO14580")
+    (tags "mounting hole 2.2mm no annular m2 iso14580")
+    (attr virtual)
+    (fp_text reference REF** (at 0 -2.9) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_2.2mm_M2_ISO14580 (at 0 2.9) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.9 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 2.15 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B964)
+    (at 24.13 45.72)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module MountingHole:MountingHole_2.2mm_M2_ISO14580 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5CD5B95D)
+    (at 90.19 26.17)
+    (descr "Mounting Hole 2.2mm, no annular, M2, ISO14580")
+    (tags "mounting hole 2.2mm no annular m2 iso14580")
+    (attr virtual)
+    (fp_text reference REF** (at 0 -2.9) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_2.2mm_M2_ISO14580 (at 0 2.9) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.9 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 2.15 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B959)
+    (at 24.13 35.56)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B955)
+    (at 24.13 48.26)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B951)
+    (at 24.13 48.26)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B94D)
+    (at 90.17 38.1)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B949)
+    (at 24.13 40.64)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B945)
+    (at 30.48 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B941)
+    (at 33.02 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B93D)
+    (at 38.1 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B939)
+    (at 43.18 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B935)
+    (at 45.72 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B931)
+    (at 71.12 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B92D)
+    (at 73.66 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B929)
+    (at 76.2 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B925)
+    (at 81.28 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B921)
+    (at 78.74 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B91D)
+    (at 50.8 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B919)
+    (at 86.36 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B915)
+    (at 40.64 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B911)
+    (at 48.26 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B90D)
+    (at 53.34 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B909)
+    (at 27.94 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B905)
+    (at 35.56 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B901)
+    (at 83.82 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8FD)
+    (at 55.88 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8F9)
+    (at 68.58 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8F5)
+    (at 27.94 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8F1)
+    (at 66.04 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8ED)
+    (at 86.36 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8E9)
+    (at 33.02 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8E5)
+    (at 40.64 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8E1)
+    (at 53.34 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8DD)
+    (at 50.8 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8D9)
+    (at 83.82 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8D5)
+    (at 76.2 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8D1)
+    (at 45.72 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8CD)
+    (at 53.34 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8C9)
+    (at 55.88 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8C5)
+    (at 63.5 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8C1)
+    (at 73.66 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8BD)
+    (at 48.26 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8B9)
+    (at 50.8 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8B5)
+    (at 58.42 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8B1)
+    (at 71.12 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8AD)
+    (at 78.74 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8A9)
+    (at 30.48 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8A5)
+    (at 58.42 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B8A1)
+    (at 60.96 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B89D)
+    (at 40.64 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B899)
+    (at 38.1 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B895)
+    (at 45.72 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B891)
+    (at 60.96 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B88D)
+    (at 68.58 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B889)
+    (at 63.5 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B885)
+    (at 66.04 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B881)
+    (at 43.18 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B87D)
+    (at 81.28 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B879)
+    (at 48.26 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B875)
+    (at 35.56 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B871)
+    (at 43.18 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B86D)
+    (at 73.66 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B869)
+    (at 83.82 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B865)
+    (at 76.2 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B861)
+    (at 27.94 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B85D)
+    (at 53.34 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B859)
+    (at 78.74 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B855)
+    (at 83.82 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B851)
+    (at 73.66 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B84D)
+    (at 58.42 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B849)
+    (at 78.74 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B845)
+    (at 86.36 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B841)
+    (at 48.26 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B83D)
+    (at 60.96 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B839)
+    (at 33.02 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B835)
+    (at 35.56 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B831)
+    (at 68.58 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B82D)
+    (at 71.12 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B829)
+    (at 81.28 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B825)
+    (at 81.28 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B821)
+    (at 30.48 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B81D)
+    (at 35.56 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B819)
+    (at 43.18 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B815)
+    (at 63.5 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B811)
+    (at 55.88 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B80D)
+    (at 27.94 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B809)
+    (at 30.48 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B805)
+    (at 38.1 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B801)
+    (at 45.72 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7FD)
+    (at 50.8 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7F9)
+    (at 66.04 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7F5)
+    (at 38.1 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7F1)
+    (at 40.64 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7ED)
+    (at 33.02 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7E9)
+    (at 76.2 33.02)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7E5)
+    (at 71.12 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7E1)
+    (at 86.36 35.56)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7DD)
+    (at 63.5 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7D9)
+    (at 83.82 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7D5)
+    (at 68.58 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7D1)
+    (at 71.12 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7CD)
+    (at 40.64 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7C9)
+    (at 43.18 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7C5)
+    (at 45.72 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7C1)
+    (at 48.26 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7BD)
+    (at 53.34 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7B9)
+    (at 66.04 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7B5)
+    (at 50.8 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7B1)
+    (at 78.74 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7AD)
+    (at 55.88 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7A9)
+    (at 73.66 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7A5)
+    (at 58.42 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B7A1)
+    (at 81.28 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B79D)
+    (at 60.96 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B799)
+    (at 76.2 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B795)
+    (at 35.56 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B791)
+    (at 60.96 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B78D)
+    (at 43.18 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B789)
+    (at 48.26 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B785)
+    (at 76.2 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B781)
+    (at 90.17 35.56)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B77D)
+    (at 38.1 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B779)
+    (at 90.17 43.18)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B775)
+    (at 30.48 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B771)
+    (at 45.72 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B76D)
+    (at 53.34 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B769)
+    (at 30.48 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B765)
+    (at 38.1 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B761)
+    (at 40.64 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B75D)
+    (at 55.88 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B759)
+    (at 68.58 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B755)
+    (at 86.36 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B751)
+    (at 58.42 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B74D)
+    (at 66.04 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B749)
+    (at 27.94 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B745)
+    (at 35.56 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B741)
+    (at 33.02 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B73D)
+    (at 90.17 45.72)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B739)
+    (at 90.17 40.64)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer F.Cu) (tedit 5CD405DC) (tstamp 5CD5B735)
+    (at 90.17 30.48)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers F.Cu F.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B731)
+    (at 81.28 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B72D)
+    (at 50.8 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B729)
+    (at 73.66 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B725)
+    (at 71.12 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B721)
+    (at 63.5 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B71D)
+    (at 33.02 30.48)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B719)
+    (at 78.74 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B715)
+    (at 83.82 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B711)
+    (at 90.17 48.26)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B70D)
+    (at 90.17 30.48)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_Pad_3.5x2mm (layer B.Cu) (tedit 5CD405DC) (tstamp 5CD5B709)
+    (at 90.17 33.02)
+    (descr "2.54mm breadboard pad, 3.5x2mm oval, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (attr smd)
+    (fp_text reference REF** (at 0 -2) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Label (at 0 2) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad "" connect oval (at 0 0) (size 3.5 2) (layers B.Cu B.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B705)
+    (at 38.1 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B701)
+    (at 43.18 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6FD)
+    (at 55.88 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6F9)
+    (at 50.8 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6F5)
+    (at 48.26 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6F1)
+    (at 66.04 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6ED)
+    (at 58.42 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6E9)
+    (at 60.96 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6E5)
+    (at 63.5 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6E1)
+    (at 68.58 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6DD)
+    (at 86.36 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6D9)
+    (at 27.94 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6D5)
+    (at 30.48 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6D1)
+    (at 53.34 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6CD)
+    (at 40.64 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6C9)
+    (at 33.02 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6C5)
+    (at 35.56 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6C1)
+    (at 45.72 48.26)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6BD)
+    (at 76.2 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6B9)
+    (at 73.66 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6B5)
+    (at 78.74 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6B1)
+    (at 81.28 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6AD)
+    (at 27.94 27.94)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6A9)
+    (at 55.88 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6A5)
+    (at 58.42 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B6A1)
+    (at 60.96 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B69D)
+    (at 66.04 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B699)
+    (at 86.36 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B695)
+    (at 63.5 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B691)
+    (at 68.58 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B68D)
+    (at 83.82 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B689)
+    (at 71.12 50.8)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B685)
+    (at 55.88 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B681)
+    (at 68.58 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B67D)
+    (at 43.18 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B679)
+    (at 53.34 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B675)
+    (at 45.72 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B671)
+    (at 50.8 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B66D)
+    (at 66.04 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B669)
+    (at 60.96 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B665)
+    (at 48.26 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B661)
+    (at 58.42 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B65D)
+    (at 63.5 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B659)
+    (at 33.02 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B655)
+    (at 35.56 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B651)
+    (at 38.1 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B64D)
+    (at 40.64 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B649)
+    (at 86.36 38.1)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B645)
+    (at 27.94 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B641)
+    (at 30.48 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B63D)
+    (at 35.56 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B639)
+    (at 45.72 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B635)
+    (at 50.8 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B631)
+    (at 38.1 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B62D)
+    (at 83.82 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B629)
+    (at 30.48 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B625)
+    (at 40.64 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B621)
+    (at 43.18 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B61D)
+    (at 33.02 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B619)
+    (at 48.26 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B615)
+    (at 53.34 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B611)
+    (at 71.12 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B60D)
+    (at 86.36 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B609)
+    (at 73.66 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B605)
+    (at 78.74 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B601)
+    (at 76.2 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5FD)
+    (at 81.28 40.64)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5F9)
+    (at 27.94 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5F5)
+    (at 86.36 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5F1)
+    (at 30.48 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5ED)
+    (at 35.56 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5E9)
+    (at 78.74 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5E5)
+    (at 55.88 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5E1)
+    (at 58.42 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5DD)
+    (at 27.94 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5D9)
+    (at 60.96 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5D5)
+    (at 63.5 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5D1)
+    (at 66.04 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5CD)
+    (at 73.66 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5C9)
+    (at 68.58 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5C5)
+    (at 71.12 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5C1)
+    (at 76.2 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5BD)
+    (at 38.1 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5B9)
+    (at 81.28 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5B5)
+    (at 33.02 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5B1)
+    (at 83.82 43.18)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5AD)
+    (at 58.42 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5A9)
+    (at 50.8 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5A5)
+    (at 66.04 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B5A1)
+    (at 71.12 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B59D)
+    (at 76.2 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B599)
+    (at 83.82 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B595)
+    (at 40.64 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B591)
+    (at 63.5 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B58D)
+    (at 43.18 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B589)
+    (at 48.26 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B585)
+    (at 45.72 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B581)
+    (at 68.58 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B57D)
+    (at 53.34 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B579)
+    (at 81.28 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B575)
+    (at 55.88 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B571)
+    (at 60.96 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B56D)
+    (at 78.74 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module WallLabs:Breadboard_2.54mm_TH_Pad_2mm (layer F.Cu) (tedit 5CD405EA) (tstamp 5CD5B569)
+    (at 73.66 45.72)
+    (descr "2.54mm breadboard through-hole pad, 2mm diameter, text centered top and bottom.")
+    (tags "breadboard, pad")
+    (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Label (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (target plus (at 27.94 27.94) (size 5) (width 0.05) (layer Edge.Cuts) (tstamp 5CD5B9C7))
+  (target plus (at 27.94 27.94) (size 5) (width 0.05) (layer Edge.Cuts) (tstamp 5CD5B9C6))
+  (gr_line (start 22.19 24.17) (end 92.19 24.17) (layer Edge.Cuts) (width 0.05) (tstamp 5CD5B9C5))
+  (dimension 26 (width 0.15) (layer Dwgs.User) (tstamp 5CD5B567)
+    (gr_text "26.000 mm" (at 16.39 39.17 270) (layer Dwgs.User) (tstamp 5CD5B567)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 24.19 52.17) (xy 17.103579 52.17)))
+    (feature2 (pts (xy 24.19 26.17) (xy 17.103579 26.17)))
+    (crossbar (pts (xy 17.69 26.17) (xy 17.69 52.17)))
+    (arrow1a (pts (xy 17.69 52.17) (xy 17.103579 51.043496)))
+    (arrow1b (pts (xy 17.69 52.17) (xy 18.276421 51.043496)))
+    (arrow2a (pts (xy 17.69 26.17) (xy 17.103579 27.296504)))
+    (arrow2b (pts (xy 17.69 26.17) (xy 18.276421 27.296504)))
+  )
+  (gr_line (start 22.19 54.17) (end 22.19 24.17) (layer Edge.Cuts) (width 0.05) (tstamp 5CD5B566))
+  (dimension 66 (width 0.15) (layer Dwgs.User) (tstamp 5CD5B564)
+    (gr_text "66.000 mm" (at 57.19 17.87) (layer Dwgs.User) (tstamp 5CD5B564)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 90.19 26.17) (xy 90.19 18.583579)))
+    (feature2 (pts (xy 24.19 26.17) (xy 24.19 18.583579)))
+    (crossbar (pts (xy 24.19 19.17) (xy 90.19 19.17)))
+    (arrow1a (pts (xy 90.19 19.17) (xy 89.063496 19.756421)))
+    (arrow1b (pts (xy 90.19 19.17) (xy 89.063496 18.583579)))
+    (arrow2a (pts (xy 24.19 19.17) (xy 25.316504 19.756421)))
+    (arrow2b (pts (xy 24.19 19.17) (xy 25.316504 18.583579)))
+  )
+  (dimension 30 (width 0.12) (layer Dwgs.User) (tstamp 5CD5B562)
+    (gr_text "30.000 mm" (at 98.96 39.17 270) (layer Dwgs.User) (tstamp 5CD5B562)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 92.19 54.17) (xy 98.276421 54.17)))
+    (feature2 (pts (xy 92.19 24.17) (xy 98.276421 24.17)))
+    (crossbar (pts (xy 97.69 24.17) (xy 97.69 54.17)))
+    (arrow1a (pts (xy 97.69 54.17) (xy 97.103579 53.043496)))
+    (arrow1b (pts (xy 97.69 54.17) (xy 98.276421 53.043496)))
+    (arrow2a (pts (xy 97.69 24.17) (xy 97.103579 25.296504)))
+    (arrow2b (pts (xy 97.69 24.17) (xy 98.276421 25.296504)))
+  )
+  (gr_line (start 92.19 24.17) (end 92.19 54.17) (layer Edge.Cuts) (width 0.05) (tstamp 5CD5B561))
+  (dimension 70 (width 0.12) (layer Dwgs.User) (tstamp 5CD5B55F)
+    (gr_text "70.000 mm" (at 57.19 60.44) (layer Dwgs.User) (tstamp 5CD5B55F)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 92.19 54.17) (xy 92.19 59.756421)))
+    (feature2 (pts (xy 22.19 54.17) (xy 22.19 59.756421)))
+    (crossbar (pts (xy 22.19 59.17) (xy 92.19 59.17)))
+    (arrow1a (pts (xy 92.19 59.17) (xy 91.063496 59.756421)))
+    (arrow1b (pts (xy 92.19 59.17) (xy 91.063496 58.583579)))
+    (arrow2a (pts (xy 22.19 59.17) (xy 23.316504 59.756421)))
+    (arrow2b (pts (xy 22.19 59.17) (xy 23.316504 58.583579)))
+  )
+  (gr_line (start 92.19 54.17) (end 22.19 54.17) (layer Edge.Cuts) (width 0.05) (tstamp 5CD5B55E))
+
+)
