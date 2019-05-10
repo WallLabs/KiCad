@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "WallLabs")(type Github)(uri "https://github.com/WallLabs/KiCad-WallLabs")(options "")(descr "Wall Labs KiCad libraries."))
+  (lib (name "WallLabs")(type Github)(uri "https://github.com/WallLabs/KiCad")(options "")(descr "Wall Labs KiCad libraries."))
 )
