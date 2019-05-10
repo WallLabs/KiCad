@@ -9,6 +9,7 @@
 *~
 _autosave-*
 *.tmp
+*-cache
 *-cache.lib
 *-rescue.lib
 *-save.pro

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Breadboard)(type Github)(uri "https://github.com/WallLabs/KiCad-WallLabs/tree/master/Footprints/Breadboard.pretty")(options "")(descr "Breadboard pins and pads."))
+)
