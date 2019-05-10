@@ -1,0 +1,12 @@
+(module Breadboard_2.54mm_Pad_2mm (layer F.Cu) (tedit 5CD405C5)
+  (descr "2.54mm breadboard pad, 2mm diameter, text centered top and bottom.")
+  (tags "breadboard, pad")
+  (attr smd)
+  (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value VAL** (at 0 -2) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" connect circle (at 0 0) (size 2 2) (layers F.Cu F.Mask))
+)
